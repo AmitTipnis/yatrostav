@@ -8,16 +8,18 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: #333;
+  margin: 0;
 }
 
 header {
   background: white;
   color: #333;
-  padding: 1.5rem 0;
+  padding: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 999;
+  padding-top: calc(15px + env(safe-area-inset-top));
 }
 
 nav {
@@ -191,8 +193,9 @@ footer p {
 
 .whatsapp-float{
   position:fixed;
-  bottom: 250px;
+  bottom: calc(250px + env(safe-area-inset-bottom));
   right: 20px;
+  z-index: 9999;
 }
 
 @media (max-width: 768px) {
