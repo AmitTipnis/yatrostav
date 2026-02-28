@@ -39,11 +39,11 @@ nav {
 
 .logo h1 {
   font-size: 2.2rem;
-  font-weight: 700;
+  font-weight: 300;
 }
 
 .logo img {
-  height: 120px;
+  height: 80px;
   width: auto;
 }
 
@@ -193,7 +193,7 @@ footer p {
 
 .whatsapp-float{
   position:fixed;
-  bottom: calc(250px + env(safe-area-inset-bottom));
+  bottom: calc(25px + env(safe-area-inset-bottom));
   right: 20px;
   z-index: 9999;
 }
