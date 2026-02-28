@@ -41,7 +41,7 @@ nav {
 }
 
 .logo img {
-  height: 180px;
+  height: 120px;
   width: auto;
 }
 
@@ -187,6 +187,12 @@ footer {
 
 footer p {
   font-size: 0.9rem;
+}
+
+.whatsapp-float{
+  position:fixed;
+  bottom: 250px;
+  right: 20px;
 }
 
 @media (max-width: 768px) {
