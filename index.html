@@ -11,72 +11,56 @@
 
 
 </head>
+
 <body>
-    <!-- Header & Navigation -->
-    <header>
-        <nav>
-            <div class="logo-container">
-                <div class="logo">
-                    <img src="css/Yatrostav_logo.png" alt="YatrOstav">
-                </div>
-                <div class="logoName">
-                    <h1>YatrOstav Stays & Travel</h1>
-                </div>
-            </div>
-        </nav>
-        <nav>
-            <div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            </div>
-        </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <h2>Welcome to YatrOstav</h2>
-        <p>Discover unforgettable stays and seamless travel experiences</p>
-        <a href="#services" class="cta-button">Explore Now</a>
-    </section>
+<nav class="navbar">
+    <div class="logo-container">
+        <img src="css/Yatrostav_logo.png" class="logo" style= height: 20px; width: 20px>
+        <h1>YatrOstav Stays & Travels </h1>
+    </div>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container">
-            <h3>Our Services</h3>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h4>🏨 Premium Accommodations</h4>
-                    <p>Handpicked hotels, resorts, and villas offering comfort and luxury for every budget</p>
-                </div>
-                <div class="service-card">
-                    <h4>✈️ Travel Planning</h4>
-                    <p>Customized itineraries and guided tours to explore the best destinations</p>
-                </div>
-                <div class="service-card">
-                    <h4> 🌴 Weekend Trips </h4>
-                    <p>Find detailed travel guides, 1–2 day itineraries, budget plans, hotel recommendations, and hidden places perfect for quick getaways.</p>
-                </div>
-                <div class="service-card">
-                    <h4>🌍 Hidden Places </h4>
-                    <p>Discover unexplored destinations and offbeat locations away from crowded tourist spots. </p>
-                </div>
-                <div class="service-card">
-                    <h4>💰 Affordable Prices</h4>
-                    <p>Competitive rates with exclusive discounts and seasonal offers</p>
-                </div>
-                <div class="service-card">
-                    <h4> 📸 Blog </h4>
-                    <p> Learn about budgeting, packing, travel safety, road trips, and hidden travel hacks to make your journeys easier and more enjoyable. </p>
-                </div>
-            </div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero" id="home">
+    <div>
+        <h2>✈️ Explore India Like Never Before</h2>
+        <p>Handpicked stays & unforgettable experiences</p>
+        <div class="hero-buttons">
+            <a href="#packages" class="cta-button">View Packages</a>
+            <a href="#contact" class="secondary-button">Plan My Trip</a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- About Section -->
+<section class="services" id="services">
+<h2>✨ Our Services</h2>
+<div class="services-grid">
+<div class="service-card" onclick="openPopup('stays')"><h4>🏨 Premium Stays</h4></div>
+<div class="service-card" onclick="openPopup('planning')"><h4>✈️ Travel Planning</h4></div>
+<div class="service-card" onclick="openPopup('weekend')"><h4>🌴 Weekend Trips</h4></div>
+<div class="service-card" onclick="openPopup('hidden')"><h4>🌍 Hidden Places</h4></div>
+<div class="service-card" onclick="openPopup('deals')"><h4>💰 Affordable Deals</h4></div>
+<div class="service-card" onclick="openPopup('blog')"><h4>📸 Travel Blog</h4></div>
+</div>
+</section>
+
+<!-- PACKAGES --> <section class="packages" id="packages"> <h2>🔥 Popular Packages</h2> <div class="package-grid"> <div class="package-card"> <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"> <h3>Goa Getaway</h3> <p>₹7,999 • 3 Days</p> </div> <div class="package-card"> <img src="https://images.unsplash.com/photo-1609947017136-9daf32a5eb16"> <h3>Manali Trip</h3> <p>₹9,999 • 4 Days</p> </div> </div> </section>
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+    <h2>⭐ What Customers Say</h2>
+    <div class="testimonial">“Amazing experience! Highly recommend.”</div>
+    <div class="testimonial">“Smooth booking and great service.”</div>
+</section>
+
+   <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
             <h3>About YatrOstav</h3>
@@ -113,25 +97,85 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" style="background: #f9f9f9; padding: 4rem 2rem;">
-        <div class="container" style="text-align: center;">
-            <h3 style="color: #667eea; margin-bottom: 2rem;">Get in Touch</h3>
-            <p style="font-size: 1.1rem; margin-bottom: 1rem;">
-                📧 Email: <a href="mailto:yatrostav@gmail.com" style="color: #667eea; text-decoration: none;">yatrostav@gmail.com</a>
-            </p>
-            <p style="font-size: 1.1rem; margin-bottom: 1rem;">
-                📱 Phone: <a href="tel:+919307688121" style="color: #667eea; text-decoration: none;">+91 9307688121 </a>
-            </p>
-            <p style="font-size: 1.1rem; margin-bottom: 1rem;">
-               <img src = "css/whatsapp.png" alt="Chat on WhatsApp" width="200">
-                <a href="https://wa.me/919307688121" target="_blank"></a>
-            </p>
-            <p style="font-size: 1.1rem;">
-                🏢 Address: YatrOstav Stays & Travels, Ganga Millenia, Kad Nagar, Undri, Pune, 411060 MH
-            </p>
-        </div>
-    </section>
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <h2>📩 Contact Us</h2>
+    <p>Email: yatrostav@gmail.com</p>
+    <p>Phone: +91 9307688121</p>
+<a href="https://wa.me/919307688121" class="whatsapp-float" target="_blank">
+        <img src = "css/whatsapp.png" alt="Chat on WhatsApp" width="200">
+    </a></section>
+
+
+
+<!--  FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/919307688121" class="whatsapp" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+</a>
+<div id="popup" class="popup">
+<div class="popup-content">
+<span class="close" onclick="closePopup()">&times;</span>
+<img id="popup-img" class="popup-img" src="">
+<h2 id="popup-title"></h2>
+<p id="popup-text"></p>
+<div>
+<a href="#packages" class="popup-btn">View Packages</a>
+<a href="https://wa.me/919307688121" target="_blank" class="popup-btn whatsapp-btn">WhatsApp</a>
+</div>
+</div>
+</div>
+
+<script>
+function openPopup(type) {
+    const title = document.getElementById("popup-title");
+    const text = document.getElementById("popup-text");
+    const img = document.getElementById("popup-img");
+
+    if(type === "stays"){
+title.innerText = "🏨 Premium Stays";
+text.innerText = "Luxury hotels, beach resorts, mountain villas & budget stays.";
+img.src = "https://images.unsplash.com/photo-1566073771259-6a8506099945";
+}
+
+if(type === "planning"){
+title.innerText = "✈️ Travel Planning";
+text.innerText = "Complete itinerary planning tailored to your budget.";
+img.src = "https://images.unsplash.com/photo-1542296332-2e4473faf563";
+}
+
+if(type === "weekend"){
+title.innerText = "🌴 Weekend Trips";
+text.innerText = "Quick 1–2 day getaways with ready plans.";
+img.src = "https://images.unsplash.com/photo-1526779259212-939e64788e3c";
+}
+
+if(type === "hidden"){
+title.innerText = "🌍 Hidden Places";
+text.innerText = "Explore offbeat destinations away from crowds.";
+img.src = "https://images.unsplash.com/photo-1501785888041-af3ef285b470";
+}
+
+if(type === "deals"){
+title.innerText = "💰 Affordable Deals";
+text.innerText = "Best travel packages with exclusive discounts.";
+img.src = "https://images.unsplash.com/photo-1556745757-8d76bdb6984b";
+}
+
+if(type === "blog"){
+title.innerText = "📸 Travel Blog";
+text.innerText = "Tips, hacks, and travel guides.";
+img.src = "https://images.unsplash.com/photo-1492724441997-5dc865305da7";
+}
+
+    document.getElementById("popup").style.display = "flex";
+}
+
+function closePopup(){
+    document.getElementById("popup").style.display = "none";
+}
+</script>
+
+
 
     <a href="https://wa.me/919307688121" class="whatsapp-float" target="_blank">
         <img src = "css/whatsapp.png" alt="Chat on WhatsApp" width="200">
